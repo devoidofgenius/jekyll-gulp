@@ -1,0 +1,31 @@
+{
+  "name": "Jekyll-Gulp",
+  "version": "1.0.0",
+  "description": "Jekyll-Gulp Starter Kit",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devoidofgenius/jekyll-gulp.git"
+  },
+  "author": "Chris Ellinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devoidofgenius/jekyll-gulp/issues"
+  },
+  "homepage": "https://github.com/devoidofgenius/jekyll-gulp.git",
+  "devDependencies": {
+    "browser-sync": "^2.7.13",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.3",
+    "gulp-uglify": "^1.2.0",
+    "imagemin-pngquant": "^4.1.0"
+  }
+}

@@ -1,0 +1,27 @@
+# Instructions
+  # Uncomment the setup you want to use. Visit the www.robotstxt.org/ for more information.
+
+# To allow all robots complete access
+
+  #User-agent: *
+  #Disallow:
+
+# To exclude all robots from the entire server
+
+  #User-agent: *
+  #Disallow: /
+
+# To exclude all robots from part of the server
+
+  #User-agent: *
+  #Disallow: /cgi-bin/
+  #Disallow: /tmp/
+  #Disallow: /junk/
+
+# To allow a single robot
+
+  #User-agent: Google
+  #Disallow:
+
+  #User-agent: *
+  #Disallow: /

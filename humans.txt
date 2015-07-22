@@ -1,0 +1,16 @@
+/* TEAM */
+
+  Creator: Chris Ellinger
+  Twitter: @devoidofgenius
+  Location: Charlottesville, Virginia
+
+/* THANKS */
+
+  Name: name or url
+
+/* SITE */
+
+  Last update: 07/06/2015
+  Doctype: HTML5
+  Components: jQuery, Bower, Gulp
+  Software: Atom.io, Photoshop, iA Writer, iTerm and lots of coffee
