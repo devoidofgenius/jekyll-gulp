@@ -10,7 +10,7 @@
 
 /* SITE */
 
-  Last update: 07/06/2015
+  Last update: 07/21/2015
   Doctype: HTML5
-  Components: jQuery, Bower, Gulp
+  Components: Jekyll, Gulp, jQuery
   Software: Atom.io, Photoshop, iA Writer, iTerm and lots of coffee
