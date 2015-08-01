@@ -9,7 +9,6 @@ var gulp          = require('gulp'),
     sass          = require('gulp-sass'),
     plumber       = require('gulp-plumber'),
     autoprefixer  = require('gulp-autoprefixer'),
-    del           = require('del'),
     rename        = require('gulp-rename'),
     imagemin      = require('gulp-imagemin'),
     pngquant      = require('imagemin-pngquant'),
@@ -35,7 +34,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 // Browser-Sync Task
 // =====================================
 
-gulp.task('browser-sync', ['sass', 'scripts', 'images', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
       server:{
         baseDir: "_site"
@@ -67,7 +66,8 @@ gulp.task('scripts', function() {
     .pipe(rename({suffix:'.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('_site/assets/js'))
-    .pipe(reload({stream:true}));
+    .pipe(reload({stream:true}))
+    .pipe(gulp.dest('assets/js'));
 });
 
 // =====================================
@@ -75,7 +75,7 @@ gulp.task('scripts', function() {
 // =====================================
 
 gulp.task('images', function () {
-  return gulp.src('assets/img/**/*.+(png|jpg|jpeg|gif|svg)')
+  gulp.src('assets/img/**/*.+(png|jpg|jpeg|gif|svg)')
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
@@ -100,4 +100,4 @@ gulp.task('watch', function() {
 // Default Task
 // =====================================
 
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['sass', 'images', 'scripts','browser-sync', 'watch']);

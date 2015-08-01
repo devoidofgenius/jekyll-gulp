@@ -1,5 +1,3 @@
-$( document ).ready(function() {
-
-  // Get started!
-
+$(document).ready(function() {
+  // Your code goes here
 });

@@ -4,43 +4,36 @@
 
 @import "1-base/normalize";
 @import "1-base/typography";
-
-
-// ========================================
-// COMPONENTS
-// ========================================
-
-@import "2-components/media";
-
+@import "1-base/variables";
+@import "1-base/overrides";
 
 // ========================================
 // HELPERS
 // ========================================
 
-@import "3-helpers/functions";
-@import "3-helpers/helpers";
-@import "3-helpers/mixins";
-@import "3-helpers/variables";
+@import "2-helpers/functions";
+@import "2-helpers/helpers";
+@import "2-helpers/mixins";
 
 
 // ========================================
 // LAYOUT
 // ========================================
 
-@import "4-layout/footer";
-@import "4-layout/forms";
-@import "4-layout/grid";
-@import "4-layout/header";
-@import "4-layout/sidebar";
+@import "3-layout/header";
+@import "3-layout/footer";
+@import "3-layout/forms";
 
 
 // ========================================
 // PAGES
 // ========================================
 
-@import "5-pages/home";
+@import "4-pages/home";
 
 
 // ========================================
-// VENDOR
+// Media Queries
 // ========================================
+
+@import "5-queries/mediaqueries";
